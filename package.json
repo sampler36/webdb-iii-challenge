@@ -8,7 +8,7 @@
     "initdb":"knex init",
     "table1":"knex migrate:make createCohortsTable",
     "table2":"knex migrate:make createStudentsTable",
-    "migrate":"knex migrate: latest",
+    "migrate":"knex migrate:latest",
     "seed1": "knex seed:make 01-cohorts",
     "seed2": "knex seed:make 02-students",
     "rollback": "knex migrate:rollback"
