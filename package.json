@@ -11,8 +11,11 @@
     "migrate":"knex migrate:latest",
     "seed1": "knex seed:make 01-cohorts",
     "seed2": "knex seed:make 02-students",
-    "rollback": "knex migrate:rollback"
-
+    "runseed1":"knex seed:run 01-cohorts",
+    "runseed2":"knex seed:run 02-students",
+    "seed":"knex seed:run",
+    "rollback":"knex migrate:rollback"
+   
   },
 
   "devDependencies": {
