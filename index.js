@@ -75,7 +75,7 @@ server.get('/api/cohorts', async (req, res) => {
   });
 
 // /api/cohorts/:id/students` returns all students for the cohort with the specified `id`.
-router.get("api/cohorts/:id/students", async (req, res) => {
+server.get("api/cohorts/:id/students", async (req, res) => {
     try {
       const students = await db("students").where({ cohort_id: req.params.id });
       res.status(200).json(students);
